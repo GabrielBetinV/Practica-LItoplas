@@ -109,7 +109,7 @@ numbers2.push('7');
 console.log(numbers2);
 
 // Restringir cantidad de digitos en numbers
-// Contar la dimencion
+// Contar la dimension
 
 const codigo = 12345;
 console.log(codigo.toString().length);
