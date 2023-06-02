@@ -54,3 +54,62 @@ console.log({ isSuperman });
 
 // No es buena practica anidar en el operador ternario, asi
 isSuperman = 1 + 1 == 2 ? true : 10 < 10 ? true : false;
+
+//Tipo Numbers
+
+const countAvengers = '123A';
+const villanos = 20;
+let avengers = Number(countAvengers);
+
+console.log(avengers);
+
+// if (avengers > villanos) {
+//   console.log('Estamos en problemas');
+// } else {
+//   console.log('Estamos a salvo');
+// }
+
+// Validar si es no es NAN para que evalue => !, es negacion
+if (!isNaN(avengers)) {
+  if (avengers > villanos) {
+    console.log('Estamos en problemas');
+  }
+} else {
+  console.log('Estamos a salvo');
+}
+
+//String
+
+const batman: string = 'Batman';
+const linternaVerde: string = 'Linterna Verde';
+const volcanNegro: string = `Heroe`;
+const poder: string = `Velocidad`;
+const edad: number = 35;
+
+console.log('Yo soy ' + batman);
+
+// Concatenar con template string
+console.log(`Yo soy ${linternaVerde} y mi poder es ${poder}
+ y tengo  ${edad}`);
+
+// any,
+
+const nombre: any = 'pedro';
+console.log(nombre.charAt(0));
+
+// Arreglos
+
+const numbers = [1, 2, 3, 4, 5, 6];
+numbers.push('7');
+console.log(numbers);
+
+// Arreglo con dos tipos de datos
+const numbers2: (string | number)[] = [1, 2, 3, 4, 5, 6];
+numbers2.push('7');
+console.log(numbers2);
+
+// Restringir cantidad de digitos en numbers
+// Contar la dimencion
+
+const codigo = 12345;
+console.log(codigo.toString().length);
